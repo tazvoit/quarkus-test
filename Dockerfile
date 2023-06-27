@@ -7,8 +7,8 @@ RUN microdnf install -y gcc glibc-devel zlib-devel
 COPY target/my-app.jar /deployments/my-app.jar
 
 # Configura las variables de entorno para GraalVM
-ENV GRAALVM_HOME=/opt/graalvm-ce-<VERSION_DE_GRAALVM>
-ENV JAVA_HOME=/opt/graalvm-ce-<VERSION_DE_GRAALVM>
+ENV GRAALVM_HOME=/opt/graalvm-ce-17.0.7+8
+ENV JAVA_HOME=/opt/graalvm-ce-17.0.7+8
 ENV PATH=${GRAALVM_HOME}/bin:${PATH}
 
 # Ejecuta la compilación de GraalVM
